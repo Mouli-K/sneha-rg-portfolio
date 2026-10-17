@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shriramBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141124"/>
+      <stop offset="100%" stop-color="#2D1B4E"/>
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#shriramBg)"/>
+
+  <!-- Top bar -->
+  <rect x="40" y="30" width="720" height="42" rx="8" fill="#1F1A3A" stroke="#3B2D63" stroke-width="1"/>
+  <circle cx="65" cy="51" r="5" fill="#EC4899"/>
+  <circle cx="82" cy="51" r="5" fill="#A855F7"/>
+  <text x="105" y="56" font-family="'JetBrains Mono', monospace" font-size="12" fill="#E9D5FF">SHRIRAM FINANCE // LEGAL CASE &amp; STATUTORY COMPLIANCE ENGINE</text>
+  <rect x="625" y="41" width="120" height="20" rx="4" fill="#6B21A8"/>
+  <text x="685" y="55" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#FFFFFF" text-anchor="middle">COMPLIANCE 100%</text>
+
+  <!-- Left: Legal Case Tracking Matrix -->
+  <rect x="50" y="95" width="340" height="360" rx="10" fill="#191530" fill-opacity="0.9" stroke="#3B2D63" stroke-width="1"/>
+  <text x="75" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Legal Documentation Matrix</text>
+  <text x="75" y="148" font-family="'JetBrains Mono', monospace" font-size="11" fill="#C084FC">NBFC STATUTORY &amp; ARBITRATION REGISTER</text>
+
+  <rect x="75" y="170" width="290" height="55" rx="6" fill="#241B45" stroke="#4C3A7A" stroke-width="1"/>
+  <text x="90" y="193" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#F472B6">CASE-REF #82049 // RECOVERY &amp; RECON</text>
+  <text x="90" y="210" font-family="'Inter', sans-serif" font-size="11" fill="#D8B4FE">Notice drafted &amp; served within statutory timeline</text>
+
+  <rect x="75" y="235" width="290" height="55" rx="6" fill="#241B45" stroke="#4C3A7A" stroke-width="1"/>
+  <text x="90" y="258" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#38BDF8">STATUTORY NOTICE DRAFTING</text>
+  <text x="90" y="275" font-family="'Inter', sans-serif" font-size="11" fill="#D8B4FE">138 NI Act &amp; SARFAESI compliance protocols</text>
+
+  <rect x="75" y="300" width="290" height="55" rx="6" fill="#241B45" stroke="#4C3A7A" stroke-width="1"/>
+  <text x="90" y="323" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#34D399">RECALL NOTICES &amp; SUBMISSIONS</text>
+  <text x="90" y="340" font-family="'Inter', sans-serif" font-size="11" fill="#D8B4FE">Legal responses vetted for banking adherence</text>
+
+  <rect x="75" y="365" width="290" height="65" rx="6" fill="#3B1C5E" stroke="#7E22CE" stroke-width="1"/>
+  <text x="90" y="388" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#F0ABFC">SYSTEMATIC REPOSITORIES</text>
+  <text x="90" y="405" font-family="'Inter', sans-serif" font-size="11" fill="#FFFFFF">Cross-functional liaison between legal counsel and finance operations.</text>
+
+  <!-- Right: Compliance Health & Milestones -->
+  <rect x="410" y="95" width="340" height="360" rx="10" fill="#191530" fill-opacity="0.9" stroke="#3B2D63" stroke-width="1"/>
+  <text x="435" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Compliance Tracking</text>
+  <text x="435" y="148" font-family="'JetBrains Mono', monospace" font-size="11" fill="#F472B6">AUDIT TRAIL &amp; TURNAROUND CADENCE</text>
+
+  <!-- Visual timeline steps -->
+  <g transform="translate(435, 175)">
+    <!-- Node 1 -->
+    <circle cx="15" cy="20" r="12" fill="#7E22CE"/>
+    <text x="15" y="24" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">1</text>
+    <line x1="15" y1="32" x2="15" y2="78" stroke="#7E22CE" stroke-width="2"/>
+    <text x="40" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Case Intake &amp; Ledger Audit</text>
+    <text x="40" y="34" font-family="'Inter', sans-serif" font-size="11" fill="#A855F7">Verification of loan contracts and defaults</text>
+
+    <!-- Node 2 -->
+    <circle cx="15" cy="90" r="12" fill="#A855F7"/>
+    <text x="15" y="94" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">2</text>
+    <line x1="15" y1="102" x2="15" y2="148" stroke="#A855F7" stroke-width="2"/>
+    <text x="40" y="88" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Legal Notice Drafting</text>
+    <text x="40" y="104" font-family="'Inter', sans-serif" font-size="11" fill="#C084FC">Standardized clauses with zero ambiguity</text>
+
+    <!-- Node 3 -->
+    <circle cx="15" cy="160" r="12" fill="#EC4899"/>
+    <text x="15" y="164" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">3</text>
+    <line x1="15" y1="172" x2="15" y2="218" stroke="#EC4899" stroke-width="2"/>
+    <text x="40" y="158" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Compliance Verification</text>
+    <text x="40" y="174" font-family="'Inter', sans-serif" font-size="11" fill="#F472B6">Adherence to RBI &amp; statutory NBFC rules</text>
+
+    <!-- Node 4 -->
+    <circle cx="15" cy="230" r="12" fill="#10B981"/>
+    <text x="15" y="234" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">✓</text>
+    <text x="40" y="228" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Orderly Archive &amp; Court Dispatch</text>
+    <text x="40" y="244" font-family="'Inter', sans-serif" font-size="11" fill="#6EE7B7">Complete documentary traceability</text>
+  </g>
+</svg>

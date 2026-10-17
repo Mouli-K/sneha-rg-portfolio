@@ -1,0 +1,22 @@
+{
+  "name": "sneha-rg-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Executive Web Portfolio for Sneha RG — Finance, Compliance & Operations Specialist",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "build": "node -e \"console.log('Build complete: Static site ready for Cloudflare Pages')\""
+  },
+  "keywords": [
+    "portfolio",
+    "finance",
+    "operations",
+    "compliance",
+    "tally-prime",
+    "gst",
+    "cloudflare-pages"
+  ],
+  "author": "Sneha RG",
+  "license": "MIT"
+}
