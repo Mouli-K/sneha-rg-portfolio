@@ -7,41 +7,41 @@
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Light mode tokens */
+  /* Pure Light Mode Tokens (Alabaster & Crisp Zinc) */
   --bg-canvas: #FBFBFA;
   --bg-surface: #FFFFFF;
-  --bg-surface-subtle: #F5F5F3;
-  --bg-surface-inset: #ECECE8;
+  --bg-surface-subtle: #F7F7F5;
+  --bg-surface-inset: #F0F0EC;
   --text-primary: #18181B;
   --text-secondary: #3F3F46;
   --text-muted: #71717A;
-  --border-subtle: #E2E2DF;
+  --border-subtle: #E4E4E7;
   --border-strong: #D4D4D8;
-  --accent-primary: #312E81;
+  --accent-primary: #1A146B;
   --accent-primary-light: #EEF2FF;
   --accent-gold: #8B7355;
-  --nav-blur-bg: rgba(251, 251, 250, 0.85);
-  --card-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-  --card-hover-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+  --nav-blur-bg: rgba(251, 251, 250, 0.92);
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.02);
+  --card-hover-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
+/* Neutralize any dark mode */
 html.dark {
-  /* Dark mode tokens (Obsidian Monograph) */
-  --bg-canvas: #0A0B0E;
-  --bg-surface: #121318;
-  --bg-surface-subtle: #181A22;
-  --bg-surface-inset: #1E202B;
-  --text-primary: #F4F4F6;
-  --text-secondary: #D4D4D8;
-  --text-muted: #A1A1AA;
-  --border-subtle: #262833;
-  --border-strong: #3F4152;
-  --accent-primary: #818CF8;
-  --accent-primary-light: rgba(99, 102, 241, 0.15);
-  --accent-gold: #F59E0B;
-  --nav-blur-bg: rgba(10, 11, 14, 0.85);
-  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
-  --card-hover-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+  --bg-canvas: #FBFBFA;
+  --bg-surface: #FFFFFF;
+  --bg-surface-subtle: #F7F7F5;
+  --bg-surface-inset: #F0F0EC;
+  --text-primary: #18181B;
+  --text-secondary: #3F3F46;
+  --text-muted: #71717A;
+  --border-subtle: #E4E4E7;
+  --border-strong: #D4D4D8;
+  --accent-primary: #1A146B;
+  --accent-primary-light: #EEF2FF;
+  --accent-gold: #8B7355;
+  --nav-blur-bg: rgba(251, 251, 250, 0.92);
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.02);
+  --card-hover-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* Base resets & typography */
@@ -163,3 +163,60 @@ code, pre, .font-mono, [data-mono] {
     line-height: 1.15 !important;
   }
 }
+
+/* Career Timeline Progression */
+.timeline-step {
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-step:hover {
+  transform: translateY(-2px);
+}
+
+.timeline-arrow-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1A146B;
+}
+
+/* Skill Stack Flow styling */
+.skill-flow-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  background-color: #FFFFFF;
+  border: 1px solid #E4E4E7;
+  border-radius: 9999px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #27272A;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  transition: all 0.2s ease;
+}
+
+.skill-flow-chip:hover {
+  border-color: #312E81;
+  color: #1A146B;
+  background-color: #EEF2FF;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(49, 46, 129, 0.08);
+}
+
+.skill-card-flow {
+  background: #FFFFFF;
+  border: 1px solid #E4E4E7;
+  border-radius: 0.85rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: all 0.2s ease;
+}
+
+.skill-card-flow:hover {
+  border-color: #C7D2FE;
+  box-shadow: 0 6px 18px rgba(49, 46, 129, 0.06);
+  transform: translateY(-2px);
+}
+
