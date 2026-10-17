@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Sneha RG | Inquiries &amp; Career Opportunities</title>
+  <meta name="description" content="Get in touch with Sneha RG for roles in Finance, Accounts, Business Operations, and Statutory Compliance. Direct email, telephone, and LinkedIn."/>
+  
+  <link rel="icon" type="image/svg+xml" href="/assets/images/avatar.svg"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Light Mode Enforced -->
+  <script>
+    (function() {
+      document.documentElement.classList.remove('dark');
+      try { localStorage.setItem('portfolio-theme', 'light'); } catch(e) {}
+    })();
+  </script>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1A146B",
+            "primary-container": "#312E81"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+            "body": ["Inter", "system-ui", "sans-serif"],
+            "mono": ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+</head>
+
+<body class="bg-[#FBFBFA] font-body text-zinc-900 antialiased min-h-screen flex flex-col selection:bg-indigo-100 selection:text-indigo-900 transition-colors duration-200">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="fixed top-0 left-0 right-0 w-full z-50 header-nav-glass transition-colors duration-200">
+    <div class="h-20 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-5">
+        <a href="/index.html" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-1">
+          <div class="w-9 h-9 rounded-full overflow-hidden ring-1 ring-zinc-300 shadow-sm transition-transform group-hover:scale-105">
+            <img src="/assets/images/avatar.svg" alt="Sneha RG Monogram" class="w-full h-full object-cover"/>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display text-sm tracking-tight text-zinc-900 font-bold group-hover:text-indigo-900 transition-colors">
+              SR <span class="text-indigo-900 font-light">//</span> PORTFOLIO
+            </span>
+            <span class="font-mono text-[11px] text-zinc-500 tracking-wider">
+              Sneha RG
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Capsule -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-1.5 px-3 py-1.5 rounded-full bg-zinc-100 border border-zinc-200 shadow-sm" aria-label="Main Navigation">
+        <a href="/index.html" class="px-3.5 py-1.5 rounded-lg text-xs text-zinc-600 hover:text-zinc-900 hover:bg-white transition-all">Overview</a>
+        <a href="/experience.html" class="px-3.5 py-1.5 rounded-lg text-xs text-zinc-600 hover:text-zinc-900 hover:bg-white transition-all">Experience</a>
+        <a href="/projects.html" class="px-3.5 py-1.5 rounded-lg text-xs text-zinc-600 hover:text-zinc-900 hover:bg-white transition-all">Featured Work</a>
+        <a href="/skills.html" class="px-3.5 py-1.5 rounded-lg text-xs text-zinc-600 hover:text-zinc-900 hover:bg-white transition-all">Skills &amp; Stack</a>
+        <a href="/education.html" class="px-3.5 py-1.5 rounded-lg text-xs text-zinc-600 hover:text-zinc-900 hover:bg-white transition-all">Education</a>
+        <a href="/contact.html" class="px-3.5 py-1.5 transition-all bg-white text-zinc-900 font-medium rounded-lg shadow-sm border border-zinc-200 text-xs">Contact</a>
+      </nav>
+
+      <!-- Right Tools -->
+      <div class="flex items-center gap-3">
+        <a href="/assets/Sneha-RG-Resume.pdf" download="Sneha_RG_Resume.pdf" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-zinc-900 text-white text-xs font-medium hover:bg-zinc-800 transition-all shadow-sm">
+          <span class="material-symbols-outlined text-[16px]">download</span>
+          <span>Resume PDF</span>
+        </a>
+
+        <button id="mobile-menu-btn" type="button" class="md:hidden w-9 h-9 rounded-lg bg-zinc-100 text-zinc-700 flex items-center justify-center border border-zinc-200" aria-label="Open mobile menu">
+          <span class="material-symbols-outlined text-[20px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MOBILE DRAWER ==================== -->
+  <div id="mobile-backdrop" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-[82%] max-w-sm z-50 bg-white border-l border-zinc-200 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
+    <div class="space-y-6">
+      <div class="flex items-center justify-between pb-4 border-b border-zinc-100">
+        <div class="flex items-center gap-2.5">
+          <img src="/assets/images/avatar.svg" alt="Monogram" class="w-8 h-8 rounded-full ring-1 ring-zinc-300"/>
+          <span class="font-display font-bold text-sm text-zinc-900">Sneha RG</span>
+        </div>
+        <button id="mobile-drawer-close" class="w-8 h-8 rounded-lg bg-zinc-100 text-zinc-600 flex items-center justify-center" aria-label="Close drawer">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-1.5" aria-label="Mobile Navigation">
+        <a href="/index.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-zinc-100 text-sm text-zinc-700">
+          <span class="material-symbols-outlined text-[18px]">dashboard</span>
+          <span>Overview</span>
+        </a>
+        <a href="/experience.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-zinc-100 text-sm text-zinc-700">
+          <span class="material-symbols-outlined text-[18px]">work</span>
+          <span>Experience</span>
+        </a>
+        <a href="/projects.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-zinc-100 text-sm text-zinc-700">
+          <span class="material-symbols-outlined text-[18px]">folder_special</span>
+          <span>Featured Work</span>
+        </a>
+        <a href="/skills.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-zinc-100 text-sm text-zinc-700">
+          <span class="material-symbols-outlined text-[18px]">terminal</span>
+          <span>Skills &amp; Stack</span>
+        </a>
+        <a href="/education.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-zinc-100 text-sm text-zinc-700">
+          <span class="material-symbols-outlined text-[18px]">school</span>
+          <span>Education &amp; Credentials</span>
+        </a>
+        <a href="/contact.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg bg-zinc-100 font-medium text-sm text-zinc-900">
+          <span class="material-symbols-outlined text-[18px] text-indigo-900">mail</span>
+          <span>Contact</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-zinc-100 space-y-3">
+      <a href="/assets/Sneha-RG-Resume.pdf" download="Sneha_RG_Resume.pdf" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-zinc-900 text-white text-xs font-semibold">
+        <span class="material-symbols-outlined text-[17px]">download</span>
+        <span>Download Resume (PDF)</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="w-full flex-1 pt-24 pb-20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      
+      <!-- Section Header -->
+      <div class="space-y-4 pb-12 border-b border-zinc-200">
+        <div class="flex items-center gap-2 text-indigo-900 font-mono text-[11px] uppercase tracking-widest font-semibold">
+          <span class="material-symbols-outlined text-[16px]">contact_mail</span>
+          Initiate Professional Dialogue
+        </div>
+        <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-zinc-900 tracking-tight">
+          Get in Touch
+        </h1>
+        <p class="text-base text-zinc-600 max-w-2xl leading-relaxed">
+          Open to full-time opportunities, immediate roles, and discussions across Finance, Accounts, Business Operations, and Statutory Compliance.
+        </p>
+      </div>
+
+      <!-- Contact Grid -->
+      <div class="pt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Direct Channels & Status (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Availability Card -->
+          <div class="monograph-card p-6 sm:p-7 rounded-2xl relative overflow-hidden">
+            <div class="flex items-center justify-between pb-3">
+              <span class="font-mono text-[11px] text-zinc-500 uppercase tracking-widest font-semibold">Current Availability</span>
+              <span class="flex h-2.5 w-2.5 relative">
+                <span class="beacon-dot absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-600"></span>
+              </span>
+            </div>
+            <h2 class="font-display text-xl font-bold text-zinc-900">
+              Open to Full-Time Roles
+            </h2>
+            <p class="text-xs sm:text-sm text-zinc-600 pt-2 leading-relaxed">
+              Ready to deploy hands-on expertise in GST reconciliation, order management dossiers, and financial accounts. Available for immediate joining.
+            </p>
+            <div class="pt-4 border-t border-zinc-100 mt-4 space-y-2 font-mono text-xs text-zinc-600">
+              <div class="flex items-center justify-between">
+                <span>Location:</span>
+                <span class="font-semibold text-zinc-900">Chennai, India</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span>Work Modes:</span>
+                <span class="font-semibold text-zinc-900">Onsite / Hybrid / Remote</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span>Notice Period:</span>
+                <span class="font-semibold text-emerald-600">Immediate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Channels -->
+          <div class="monograph-card p-6 sm:p-7 rounded-2xl space-y-5">
+            <h3 class="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">
+              Direct Contact Coordinates
+            </h3>
+
+            <!-- Email -->
+            <div class="flex items-center justify-between gap-3 p-3.5 rounded-xl bg-zinc-50 border border-zinc-200">
+              <div class="flex items-center gap-3 overflow-hidden">
+                <span class="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-900 flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[18px]">mail</span>
+                </span>
+                <div class="truncate">
+                  <span class="font-mono text-[10px] text-zinc-400 uppercase block font-semibold">Email Address</span>
+                  <span class="text-xs sm:text-sm font-mono text-zinc-900 font-medium truncate">sneharg288@gmail.com</span>
+                </div>
+              </div>
+              <button type="button" class="px-2.5 py-1.5 rounded-lg bg-white text-zinc-700 text-xs font-mono hover:bg-zinc-100 border border-zinc-200 shrink-0 font-medium" onclick="copyToClipboard('sneharg288@gmail.com', 'Email copied to clipboard!')">
+                Copy
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="flex items-center justify-between gap-3 p-3.5 rounded-xl bg-zinc-50 border border-zinc-200">
+              <div class="flex items-center gap-3 overflow-hidden">
+                <span class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-900 flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[18px]">phone</span>
+                </span>
+                <div class="truncate">
+                  <span class="font-mono text-[10px] text-zinc-400 uppercase block font-semibold">Telephone</span>
+                  <a href="tel:+916382261239" class="text-xs sm:text-sm font-mono text-zinc-900 font-medium hover:underline truncate">+91 6382261239</a>
+                </div>
+              </div>
+              <button type="button" class="px-2.5 py-1.5 rounded-lg bg-white text-zinc-700 text-xs font-mono hover:bg-zinc-100 border border-zinc-200 shrink-0 font-medium" onclick="copyToClipboard('+916382261239', 'Phone number copied!')">
+                Copy
+              </button>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="flex items-center justify-between gap-3 p-3.5 rounded-xl bg-zinc-50 border border-zinc-200">
+              <div class="flex items-center gap-3 overflow-hidden">
+                <span class="w-9 h-9 rounded-lg bg-blue-50 text-blue-900 flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[18px]">link</span>
+                </span>
+                <div class="truncate">
+                  <span class="font-mono text-[10px] text-zinc-400 uppercase block font-semibold">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/sneha-rg-19ba07377" target="_blank" rel="noopener noreferrer" class="text-xs sm:text-sm font-mono text-zinc-900 font-medium hover:underline truncate">in/sneha-rg-19ba07377</a>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/sneha-rg-19ba07377" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1.5 rounded-lg bg-white text-zinc-700 text-xs font-mono hover:bg-zinc-100 border border-zinc-200 shrink-0 font-medium">
+                Visit
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right: Message Form with Clear Action (7 cols) -->
+        <div class="lg:col-span-7">
+          <div class="monograph-card p-6 sm:p-8 lg:p-10 rounded-2xl space-y-6">
+            <div>
+              <span class="font-mono text-xs uppercase tracking-widest text-indigo-900 font-semibold block mb-1">
+                Direct Inquiry Composer
+              </span>
+              <h2 class="font-display text-2xl font-bold text-zinc-900">
+                Send an Opportunity or Message
+              </h2>
+              <p class="text-xs sm:text-sm text-zinc-600 pt-1 leading-relaxed">
+                Fill out the details below to compose an email directly to Sneha RG.
+              </p>
+            </div>
+
+            <form id="portfolio-contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contact-name" class="block font-mono text-xs text-zinc-700 uppercase mb-1.5 font-semibold">Your Name *</label>
+                  <input type="text" id="contact-name" required placeholder="e.g. Hiring Manager / Recruiter" class="w-full px-4 py-2.5 rounded-lg bg-zinc-50 border border-zinc-300 text-sm text-zinc-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"/>
+                </div>
+
+                <div>
+                  <label for="contact-email" class="block font-mono text-xs text-zinc-700 uppercase mb-1.5 font-semibold">Your Email *</label>
+                  <input type="email" id="contact-email" required placeholder="e.g. recruiter@organization.com" class="w-full px-4 py-2.5 rounded-lg bg-zinc-50 border border-zinc-300 text-sm text-zinc-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"/>
+                </div>
+              </div>
+
+              <div>
+                <label for="contact-subject" class="block font-mono text-xs text-zinc-700 uppercase mb-1.5 font-semibold">Inquiry Type / Role</label>
+                <select id="contact-subject" class="w-full px-4 py-2.5 rounded-lg bg-zinc-50 border border-zinc-300 text-sm text-zinc-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all">
+                  <option value="Finance &amp; Accounts Full-Time Role">Finance &amp; Accounts Full-Time Role</option>
+                  <option value="Statutory GST &amp; Tax Compliance Opportunity">Statutory GST &amp; Tax Compliance Opportunity</option>
+                  <option value="Documentation &amp; Order Operations Role">Documentation &amp; Order Operations Role</option>
+                  <option value="General Professional Inquiry">General Professional Inquiry</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="contact-message" class="block font-mono text-xs text-zinc-700 uppercase mb-1.5 font-semibold">Message *</label>
+                <textarea id="contact-message" rows="5" required placeholder="Describe the role requirements, team, or opportunity..." class="w-full px-4 py-2.5 rounded-lg bg-zinc-50 border border-zinc-300 text-sm text-zinc-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"></textarea>
+              </div>
+
+              <!-- Clear Action Buttons -->
+              <div class="pt-2 space-y-3">
+                <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-zinc-900 text-white font-mono text-xs uppercase tracking-wider hover:bg-zinc-800 transition-all font-semibold shadow-sm">
+                  <span class="material-symbols-outlined text-[18px]">mail</span>
+                  <span>Send via Email Client (Opens Your Email App)</span>
+                </button>
+
+                <!-- Helpful Explanation Box -->
+                <div class="p-4 rounded-xl bg-indigo-50/70 border border-indigo-100 text-xs text-zinc-700 leading-relaxed flex items-start gap-3">
+                  <span class="material-symbols-outlined text-indigo-900 text-[18px] shrink-0 mt-0.5">info</span>
+                  <div>
+                    <strong class="font-semibold text-zinc-900 block mb-0.5">How this works:</strong>
+                    Clicking the button above opens your device’s default mail app (Gmail, Outlook, Apple Mail) with the subject and body pre-filled to <strong class="text-zinc-900">sneharg288@gmail.com</strong> so you can send it instantly. Alternatively, click below to copy the email address.
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-center gap-3 pt-1">
+                  <button type="button" class="inline-flex items-center gap-1.5 text-xs font-mono text-indigo-900 hover:underline font-semibold" onclick="copyToClipboard('sneharg288@gmail.com', 'Email copied!')">
+                    <span class="material-symbols-outlined text-[15px]">content_copy</span>
+                    <span>Copy Email Address (sneharg288@gmail.com)</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="w-full bg-[#F4F4F1] border-t border-zinc-200 mt-auto transition-colors">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex flex-col items-center md:items-start gap-1.5">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 beacon-dot"></span>
+          <span class="font-mono text-xs text-zinc-800 font-medium live-ist-clock">
+            Chennai, India — Loading live time...
+          </span>
+        </div>
+        <p class="text-xs text-zinc-500">
+          © 2026 Sneha RG. Professional Portfolio in Finance, Compliance &amp; Operations.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-5 font-mono text-xs text-zinc-500">
+        <a href="https://www.linkedin.com/in/sneha-rg-19ba07377" target="_blank" rel="noopener noreferrer" class="hover:text-zinc-900 transition-colors">LinkedIn</a>
+        <span class="text-zinc-300">/</span>
+        <a href="mailto:sneharg288@gmail.com" class="hover:text-zinc-900 transition-colors">Email</a>
+        <span class="text-zinc-300">/</span>
+        <a href="/assets/Sneha-RG-Resume.pdf" download="Sneha_RG_Resume.pdf" class="hover:text-zinc-900 transition-colors">Resume PDF</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

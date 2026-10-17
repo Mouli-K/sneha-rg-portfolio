@@ -149,7 +149,7 @@
       period: 'Dec 2025 – Present',
       role: 'Documentation & Order Management Trainee',
       badge: 'CURRENT ROLE • ORDER MANAGEMENT & COMPLIANCE',
-      image: './assets/images/emerson-dossier.svg',
+      image: '/assets/images/emerson-dossier.svg',
       overview: 'Handling commercial documentation, customer-ready invoicing, warranty files, and Quality Control certificates adhering to Standard Operating Procedures (SOP) and order requirements.',
       keyContributions: [
         'Prepared and submitted customer-ready invoices, warranty files, and QC certificates.',
@@ -164,7 +164,7 @@
       period: 'Aug 2025 – Nov 2025',
       role: 'CRM Executive',
       badge: 'CLIENT OPERATIONS • CRM COORDINATION',
-      image: './assets/images/powerbi-telemetry.svg',
+      image: '/assets/images/powerbi-telemetry.svg',
       overview: 'Managed direct client communication, customer enquiries, pricing explanation, and inter-departmental service coordination through disciplined follow-ups.',
       keyContributions: [
         'Managed direct client communication and explained services and pricing clearly.',
@@ -179,7 +179,7 @@
       period: 'Jul 2025 – Aug 2025',
       role: 'Junior Executive (Internship)',
       badge: 'INTERNSHIP • LEGAL COMPLIANCE',
-      image: './assets/images/shriram-legal.svg',
+      image: '/assets/images/shriram-legal.svg',
       overview: 'Contributed to legal case documentation and regulatory compliance tracking inside the corporate legal department of Shriram Finance Ltd.',
       keyContributions: [
         'Supported legal case documentation and compliance tracking, assisted in drafting legal notices and responses.',
@@ -193,7 +193,7 @@
       period: 'May 2024 – Jun 2024',
       role: 'Finance Intern',
       badge: 'INTERNSHIP • FINANCE & GST',
-      image: './assets/images/lt-gst-costing.svg',
+      image: '/assets/images/lt-gst-costing.svg',
       overview: 'Supported the Finance Department’s GST Team, gaining practical exposure to corporate tax filing, departmental ledgers, and management accounting techniques.',
       keyContributions: [
         'Supported the Finance Department’s GST Team, gained practical exposure to finance operations and departmental processes.',

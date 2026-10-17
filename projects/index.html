@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Featured Work — Sneha RG | Professional Deliverables &amp; Assignments</title>
+  <meta name="description" content="Verified professional deliverables and operational assignments of Sneha RG across Emerson, ELK India, Shriram Finance, and Larsen & Toubro."/>
+  
+  <link rel="icon" type="image/svg+xml" href="/assets/images/avatar.svg"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Light Mode Enforced -->
+  <script>
+    (function() {
+      document.documentElement.classList.remove('dark');
+      try { localStorage.setItem('portfolio-theme', 'light'); } catch(e) {}
+    })();
+  </script>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1A146B",
+            "primary-container": "#312E81"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+            "body": ["Inter", "system-ui", "sans-serif"],
+            "mono": ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+</head>
+
+<body class="bg-[#FBFBFA] font-body text-zinc-900 antialiased min-h-screen flex flex-col selection:bg-indigo-100 selection:text-indigo-900 transition-colors duration-200">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="fixed top-0 left-0 right-0 w-full z-50 header-nav-glass transition-colors duration-200">
+    <div class="h-20 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-5">
+        <a href="/index.html" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-1">
+          <div class="w-9 h-9 rounded-full overflow-hidden ring-1 ring-zinc-300 shadow-sm transition-transform group-hover:scale-105">
+            <img src="/assets/images/avatar.svg" alt="Sneha RG Monogram" class="w-full h-full object-cover"/>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display text-sm tracking-tight text-zinc-900 font-bold group-hover:text-indigo-900 transition-colors">
+              SR <span class="text-indigo-900 font-light">//</span> PORTFOLIO
+            </span>
+            <span class="font-mono text-[11px] text-zinc-500 tracking-wider">
+              Sneha RG
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Capsule -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-1.5 px-3 py-1.5 rounded-full bg-zinc-100 border border-zinc-200 shadow-sm" aria-label="Main Navigation">
+        <a href="/index.html" class="px-3.5 py-1.5 rounded-lg text-xs text-zinc-600 hover:text-zinc-900 hover:bg-white transition-all">Overview</a>
+        <a href="/experience.html" class="px-3.5 py-1.5 rounded-lg text-xs text-zinc-600 hover:text-zinc-900 hover:bg-white transition-all">Experience</a>
+        <a href="/projects.html" class="px-3.5 py-1.5 transition-all bg-white text-zinc-900 font-medium rounded-lg shadow-sm border border-zinc-200 text-xs">Featured Work</a>
+        <a href="/skills.html" class="px-3.5 py-1.5 rounded-lg text-xs text-zinc-600 hover:text-zinc-900 hover:bg-white transition-all">Skills &amp; Stack</a>
+        <a href="/education.html" class="px-3.5 py-1.5 rounded-lg text-xs text-zinc-600 hover:text-zinc-900 hover:bg-white transition-all">Education</a>
+        <a href="/contact.html" class="px-3.5 py-1.5 rounded-lg text-xs text-zinc-600 hover:text-zinc-900 hover:bg-white transition-all">Contact</a>
+      </nav>
+
+      <!-- Right Tools -->
+      <div class="flex items-center gap-3">
+        <a href="/assets/Sneha-RG-Resume.pdf" download="Sneha_RG_Resume.pdf" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-zinc-900 text-white text-xs font-medium hover:bg-zinc-800 transition-all shadow-sm">
+          <span class="material-symbols-outlined text-[16px]">download</span>
+          <span>Resume PDF</span>
+        </a>
+
+        <button id="mobile-menu-btn" type="button" class="md:hidden w-9 h-9 rounded-lg bg-zinc-100 text-zinc-700 flex items-center justify-center border border-zinc-200" aria-label="Open mobile menu">
+          <span class="material-symbols-outlined text-[20px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MOBILE DRAWER ==================== -->
+  <div id="mobile-backdrop" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-[82%] max-w-sm z-50 bg-white border-l border-zinc-200 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
+    <div class="space-y-6">
+      <div class="flex items-center justify-between pb-4 border-b border-zinc-100">
+        <div class="flex items-center gap-2.5">
+          <img src="/assets/images/avatar.svg" alt="Monogram" class="w-8 h-8 rounded-full ring-1 ring-zinc-300"/>
+          <span class="font-display font-bold text-sm text-zinc-900">Sneha RG</span>
+        </div>
+        <button id="mobile-drawer-close" class="w-8 h-8 rounded-lg bg-zinc-100 text-zinc-600 flex items-center justify-center" aria-label="Close drawer">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-1.5" aria-label="Mobile Navigation">
+        <a href="/index.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-zinc-100 text-sm text-zinc-700">
+          <span class="material-symbols-outlined text-[18px]">dashboard</span>
+          <span>Overview</span>
+        </a>
+        <a href="/experience.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-zinc-100 text-sm text-zinc-700">
+          <span class="material-symbols-outlined text-[18px]">work</span>
+          <span>Experience</span>
+        </a>
+        <a href="/projects.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg bg-zinc-100 font-medium text-sm text-zinc-900">
+          <span class="material-symbols-outlined text-[18px] text-indigo-900">folder_special</span>
+          <span>Featured Work</span>
+        </a>
+        <a href="/skills.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-zinc-100 text-sm text-zinc-700">
+          <span class="material-symbols-outlined text-[18px]">terminal</span>
+          <span>Skills &amp; Stack</span>
+        </a>
+        <a href="/education.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-zinc-100 text-sm text-zinc-700">
+          <span class="material-symbols-outlined text-[18px]">school</span>
+          <span>Education &amp; Credentials</span>
+        </a>
+        <a href="/contact.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg hover:bg-zinc-100 text-sm text-zinc-700">
+          <span class="material-symbols-outlined text-[18px]">mail</span>
+          <span>Contact</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-zinc-100 space-y-3">
+      <a href="/assets/Sneha-RG-Resume.pdf" download="Sneha_RG_Resume.pdf" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-zinc-900 text-white text-xs font-semibold">
+        <span class="material-symbols-outlined text-[17px]">download</span>
+        <span>Download Resume (PDF)</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="w-full flex-1 pt-24 pb-20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      
+      <!-- Section Header -->
+      <div class="space-y-4 pb-12 border-b border-zinc-200">
+        <div class="flex items-center gap-2 text-indigo-900 font-mono text-[11px] uppercase tracking-widest font-semibold">
+          <span class="material-symbols-outlined text-[16px]">folder_special</span>
+          Professional Deliverables &amp; Core Assignments
+        </div>
+        <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-zinc-900 tracking-tight">
+          Featured Work &amp; Deliverables
+        </h1>
+        <p class="text-base text-zinc-600 max-w-3xl leading-relaxed">
+          Verifiable responsibilities and commercial assignments executed across corporate engagements. Directly sourced from Sneha RG’s professional background — focusing strictly on factual deliverables in documentation, client operations, legal compliance, and finance.
+        </p>
+      </div>
+
+      <!-- Core Deliverables List (100% Resume Accurate) -->
+      <div class="pt-12 space-y-12">
+
+        <!-- Deliverable 1: Emerson Process Management -->
+        <div class="monograph-card rounded-2xl overflow-hidden p-6 sm:p-8 lg:p-10 border-l-4 border-l-indigo-900">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-4 pb-6 border-b border-zinc-100">
+            <div>
+              <div class="flex items-center gap-2 font-mono text-xs text-indigo-900 font-semibold uppercase tracking-wider mb-1">
+                <span>ASSIGNMENT 01 • DOCUMENTATION &amp; ORDER MANAGEMENT</span>
+              </div>
+              <h2 class="font-display text-2xl sm:text-3xl font-bold text-zinc-900">
+                Customer-Ready Invoices, Warranty Files &amp; Quality Dossiers
+              </h2>
+              <div class="text-sm font-medium text-zinc-700 pt-1">
+                Emerson Process Management Chennai Pvt Ltd. — Dec 2025 – Present
+              </div>
+            </div>
+            <span class="inline-block px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-900 font-mono text-xs font-semibold self-start">
+              Current Role
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6">
+            <div class="lg:col-span-8 space-y-4">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">
+                Delivered Responsibilities
+              </h3>
+              <ul class="space-y-3 text-sm text-zinc-700 leading-relaxed font-body">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-indigo-900 text-[18px] shrink-0 mt-0.5">check_circle</span>
+                  <span>Prepared and submitted customer-ready invoices, warranty files, and Quality Control (QC) certificates.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-indigo-900 text-[18px] shrink-0 mt-0.5">check_circle</span>
+                  <span>Performed Specification (SPEC) and General Arrangement Drawing (GAD) documentation activities in the document management database.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-indigo-900 text-[18px] shrink-0 mt-0.5">check_circle</span>
+                  <span>Skilled in preparing Instruction and Operation Manuals, Quality Dossiers, and Catalogues for final documentation, with a focus on accuracy, SOP adherence, and timely order closure.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="lg:col-span-4 monograph-card-subtle p-5 rounded-xl space-y-3">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">Key Outputs</h3>
+              <div class="text-xs font-mono text-zinc-600 space-y-2">
+                <div>• Customer-ready commercial invoices</div>
+                <div>• Warranty files &amp; QC certificates</div>
+                <div>• SPEC and GAD database records</div>
+                <div>• Quality Dossiers &amp; Operation Manuals</div>
+                <div>• Strict SOP compliance</div>
+              </div>
+              <div class="pt-2 flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">SPEC &amp; GAD</span>
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">Quality Dossiers</span>
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">SOP Compliance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deliverable 2: ELK India -->
+        <div class="monograph-card rounded-2xl overflow-hidden p-6 sm:p-8 lg:p-10 border-l-4 border-l-emerald-600">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-4 pb-6 border-b border-zinc-100">
+            <div>
+              <div class="flex items-center gap-2 font-mono text-xs text-emerald-800 font-semibold uppercase tracking-wider mb-1">
+                <span>ASSIGNMENT 02 • CLIENT ENGAGEMENT &amp; CRM</span>
+              </div>
+              <h2 class="font-display text-2xl sm:text-3xl font-bold text-zinc-900">
+                Direct Client Communication &amp; Service Coordination
+              </h2>
+              <div class="text-sm font-medium text-zinc-700 pt-1">
+                ELK India — Aug 2025 – Nov 2025
+              </div>
+            </div>
+            <span class="inline-block px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-900 font-mono text-xs font-semibold self-start">
+              CRM Executive
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6">
+            <div class="lg:col-span-8 space-y-4">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">
+                Delivered Responsibilities
+              </h3>
+              <ul class="space-y-3 text-sm text-zinc-700 leading-relaxed font-body">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-emerald-700 text-[18px] shrink-0 mt-0.5">check_circle</span>
+                  <span>Managed direct client communication and explained services and pricing clearly.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-emerald-700 text-[18px] shrink-0 mt-0.5">check_circle</span>
+                  <span>Supported timely client communication and service coordination through structured follow-ups.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-emerald-700 text-[18px] shrink-0 mt-0.5">check_circle</span>
+                  <span>Helped maintain consistent customer enquiry handling and internal coordination.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="lg:col-span-4 monograph-card-subtle p-5 rounded-xl space-y-3">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">Key Outputs</h3>
+              <div class="text-xs font-mono text-zinc-600 space-y-2">
+                <div>• Direct client interfacing</div>
+                <div>• Service &amp; pricing schedule clarity</div>
+                <div>• Structured follow-up cadences</div>
+                <div>• Internal coordination pipelines</div>
+              </div>
+              <div class="pt-2 flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">HubSpot CRM</span>
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">Client Handling</span>
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">Service Scoping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deliverable 3: Shriram Finance Ltd. -->
+        <div class="monograph-card rounded-2xl overflow-hidden p-6 sm:p-8 lg:p-10 border-l-4 border-l-purple-600">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-4 pb-6 border-b border-zinc-100">
+            <div>
+              <div class="flex items-center gap-2 font-mono text-xs text-purple-800 font-semibold uppercase tracking-wider mb-1">
+                <span>ASSIGNMENT 03 • LEGAL OPERATIONS &amp; COMPLIANCE</span>
+              </div>
+              <h2 class="font-display text-2xl sm:text-3xl font-bold text-zinc-900">
+                Legal Case Documentation &amp; Statutory Notice Assistance
+              </h2>
+              <div class="text-sm font-medium text-zinc-700 pt-1">
+                Shriram Finance Ltd. — Legal Department — Jul 2025 – Aug 2025
+              </div>
+            </div>
+            <span class="inline-block px-3 py-1.5 rounded-lg bg-purple-50 text-purple-900 font-mono text-xs font-semibold self-start">
+              Junior Executive
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6">
+            <div class="lg:col-span-8 space-y-4">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">
+                Delivered Responsibilities
+              </h3>
+              <ul class="space-y-3 text-sm text-zinc-700 leading-relaxed font-body">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-purple-700 text-[18px] shrink-0 mt-0.5">check_circle</span>
+                  <span>Supported legal case documentation and compliance tracking, assisted in drafting legal notices and responses.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-purple-700 text-[18px] shrink-0 mt-0.5">check_circle</span>
+                  <span>Contributed to organized documentation and compliance tracking within the finance company’s legal function.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="lg:col-span-4 monograph-card-subtle p-5 rounded-xl space-y-3">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">Key Outputs</h3>
+              <div class="text-xs font-mono text-zinc-600 space-y-2">
+                <div>• Case registries and documentation</div>
+                <div>• Assisting in drafting legal notices</div>
+                <div>• Institutional response drafting</div>
+                <div>• Financial compliance tracking</div>
+              </div>
+              <div class="pt-2 flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">Legal Notices</span>
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">Compliance Tracking</span>
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">NBFC Ops</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deliverable 4: Larsen & Toubro -->
+        <div class="monograph-card rounded-2xl overflow-hidden p-6 sm:p-8 lg:p-10 border-l-4 border-l-blue-600">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-4 pb-6 border-b border-zinc-100">
+            <div>
+              <div class="flex items-center gap-2 font-mono text-xs text-blue-800 font-semibold uppercase tracking-wider mb-1">
+                <span>ASSIGNMENT 04 • CORPORATE FINANCE &amp; TAXATION</span>
+              </div>
+              <h2 class="font-display text-2xl sm:text-3xl font-bold text-zinc-900">
+                GST Department Support &amp; Marginal Costing Activities
+              </h2>
+              <div class="text-sm font-medium text-zinc-700 pt-1">
+                Larsen &amp; Toubro (Chennai) — May 2024 – Jun 2024
+              </div>
+            </div>
+            <span class="inline-block px-3 py-1.5 rounded-lg bg-blue-50 text-blue-900 font-mono text-xs font-semibold self-start">
+              Finance Intern
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6">
+            <div class="lg:col-span-8 space-y-4">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">
+                Delivered Responsibilities
+              </h3>
+              <ul class="space-y-3 text-sm text-zinc-700 leading-relaxed font-body">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-blue-700 text-[18px] shrink-0 mt-0.5">check_circle</span>
+                  <span>Supported the Finance Department’s GST Team, gaining practical exposure to finance operations and departmental processes.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-blue-700 text-[18px] shrink-0 mt-0.5">check_circle</span>
+                  <span>Assisted with management accounting activities using marginal costing principles.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="lg:col-span-4 monograph-card-subtle p-5 rounded-xl space-y-3">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">Key Outputs</h3>
+              <div class="text-xs font-mono text-zinc-600 space-y-2">
+                <div>• Finance Department GST support</div>
+                <div>• Departmental process understanding</div>
+                <div>• Marginal costing analysis</div>
+                <div>• Management accounting exposure</div>
+              </div>
+              <div class="pt-2 flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">GST Team</span>
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">Marginal Costing</span>
+                <span class="px-2 py-0.5 rounded bg-white text-zinc-700 font-mono text-[11px] border border-zinc-200">Finance Ops</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="w-full bg-[#F4F4F1] border-t border-zinc-200 mt-auto transition-colors">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex flex-col items-center md:items-start gap-1.5">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 beacon-dot"></span>
+          <span class="font-mono text-xs text-zinc-800 font-medium live-ist-clock">
+            Chennai, India — Loading live time...
+          </span>
+        </div>
+        <p class="text-xs text-zinc-500">
+          © 2026 Sneha RG. Professional Portfolio in Finance, Compliance &amp; Operations.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-5 font-mono text-xs text-zinc-500">
+        <a href="https://www.linkedin.com/in/sneha-rg-19ba07377" target="_blank" rel="noopener noreferrer" class="hover:text-zinc-900 transition-colors">LinkedIn</a>
+        <span class="text-zinc-300">/</span>
+        <a href="mailto:sneharg288@gmail.com" class="hover:text-zinc-900 transition-colors">Email</a>
+        <span class="text-zinc-300">/</span>
+        <a href="/assets/Sneha-RG-Resume.pdf" download="Sneha_RG_Resume.pdf" class="hover:text-zinc-900 transition-colors">Resume PDF</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
