@@ -18,5 +18,8 @@
     "cloudflare-pages"
   ],
   "author": "Sneha RG",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
 }

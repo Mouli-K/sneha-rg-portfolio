@@ -5,3 +5,5 @@ Thumbs.db
 .idea/
 dist/
 *.log
+cloudflare-pages-deploy.zip
+
