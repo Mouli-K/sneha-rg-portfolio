@@ -98,5 +98,15 @@ Portfolio - 3/
 - [x] Contact form clarified with explicit mail client explanation.
 - [x] Tailwind CSS compiled for production (no CDN warnings in console).
 - [x] GitHub repository updated and synchronized.
+- [x] Resume synchronized with updated `Sneha RG.pdf` (November 8, 2026).
+- [x] CMA Intermediate credential added to Education section (`education.html` and `education/index.html`).
 
-*Document finalized on October 17, 2026.*
+---
+
+## 6. Update Log (November 8, 2026)
+- **Updated Resume Replacement**: Replaced `assets/Sneha-RG-Resume.pdf` with the newly updated `Sneha RG.pdf` to ensure all site download buttons deliver the latest resume.
+- **Added CMA Intermediate**: Integrated Cost and Management Accountant — Intermediate (ICMAI, Status: In Progress) as a primary professional qualification card in `education.html` and synced subfolder index.
+- **Production Asset Compilation**: Re-ran `npm run build` to recompile Tailwind CSS and regenerate distribution/routing structures.
+- **Single-Commit Repository Push**: All file modifications committed and pushed to GitHub `origin/main` in a single consolidated commit per user instructions.
+
+*Document updated on November 8, 2026.*
